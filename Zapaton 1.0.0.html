@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zapaton | Calzado para toda la familia</title>
+  <meta name="description" content="Zapaton: tenis, botas, sandalias y zapatos para niño, niña, hombre y mujer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Símbolo reutilizable de zapato (se colorea desde CSS) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="zapato" viewBox="0 0 200 100">
+      <path class="suela" d="M6 76h188c4 0 6 3 6 7v2c0 6-4 9-10 9H16c-7 0-10-4-10-10z"/>
+      <path class="cuerpo" d="M10 76c0-24 18-30 36-36l22-18c8-6 18-3 22 6 8 16 34 26 68 32 22 4 34 8 34 16z"/>
+      <path class="detalle" d="M72 30l12 10M82 24l12 12M92 28l10 10" stroke-width="4" stroke-linecap="round" fill="none"/>
+      <path class="detalle" d="M10 70h182" stroke-width="3" fill="none"/>
+    </symbol>
+  </svg>
+
+  <div class="aviso">Envío gratis en compras desde $999 · 30 días para cambios</div>
+
+  <header class="cabecera">
+    <a class="logo" href="#inicio" aria-label="Zapaton, inicio">Zapaton</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#ninos">Niño</a>
+      <a href="#ninas">Niña</a>
+      <a href="#hombre">Masculino</a>
+      <a href="#mujer">Femenino</a>
+      <a href="#novedades">Novedades</a>
+    </nav>
+    <div class="acciones">
+      <a href="#buscar" class="icono" aria-label="Buscar">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      </a>
+      <a href="#carrito" class="carrito">Carrito <span>0</span></a>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-texto">
+        <h1>Pisa fuerte,<br>llega lejos.</h1>
+        <p>Tenis, botas, sandalias y zapatos para todas las edades y todos los días. Encuentra tu par en minutos.</p>
+        <div class="hero-botones">
+          <a class="btn btn-principal" href="#categorias">Comprar ahora</a>
+          <a class="btn btn-borde" href="#novedades">Ver novedades</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <span class="sello">Nueva<br>colección</span>
+        <svg class="zapato-hero"><use href="#zapato"/></svg>
+      </div>
+    </section>
+
+    <!-- BANDA -->
+    <div class="banda" aria-hidden="true">
+      <div class="banda-pista">
+        <span>Tenis</span><span>Botas</span><span>Sandalias</span><span>Mocasines</span><span>Tacones</span><span>Escolares</span><span>Deportivos</span>
+        <span>Tenis</span><span>Botas</span><span>Sandalias</span><span>Mocasines</span><span>Tacones</span><span>Escolares</span><span>Deportivos</span>
+      </div>
+    </div>
+
+    <!-- CATEGORÍAS -->
+    <section class="seccion" id="categorias">
+      <h2 class="titulo">Elige tu categoría</h2>
+      <div class="categorias">
+        <a class="cat cat-nino" id="ninos" href="#novedades">
+          <span class="cat-nombre">Niño</span>
+          <span class="cat-info">Tallas 15 – 22 · 120 modelos</span>
+          <svg class="cat-zapato"><use href="#zapato"/></svg>
+        </a>
+        <a class="cat cat-nina" id="ninas" href="#novedades">
+          <span class="cat-nombre">Niña</span>
+          <span class="cat-info">Tallas 15 – 22 · 135 modelos</span>
+          <svg class="cat-zapato"><use href="#zapato"/></svg>
+        </a>
+        <a class="cat cat-hombre" id="hombre" href="#novedades">
+          <span class="cat-nombre">Masculino</span>
+          <span class="cat-info">Tallas 24 – 31 · 210 modelos</span>
+          <svg class="cat-zapato"><use href="#zapato"/></svg>
+        </a>
+        <a class="cat cat-mujer" id="mujer" href="#novedades">
+          <span class="cat-nombre">Femenino</span>
+          <span class="cat-info">Tallas 21 – 28 · 240 modelos</span>
+          <svg class="cat-zapato"><use href="#zapato"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="seccion" id="novedades">
+      <div class="encabezado">
+        <h2 class="titulo">Lo más nuevo</h2>
+        <a class="enlace" href="#novedades">Ver todo el catálogo</a>
+      </div>
+
+      <div class="productos">
+        <article class="producto">
+          <div class="foto fondo-1"><span class="etiqueta">Nuevo</span><svg class="p-zapato z1"><use href="#zapato"/></svg></div>
+          <p class="p-cat">Masculino · Tenis</p>
+          <h3>Rápido Urbano</h3>
+          <div class="p-pie"><span class="precio">$1,299</span><button class="btn-mini" type="button">Agregar</button></div>
+        </article>
+
+        <article class="producto">
+          <div class="foto fondo-2"><svg class="p-zapato z2"><use href="#zapato"/></svg></div>
+          <p class="p-cat">Femenino · Casual</p>
+          <h3>Nube Rosa</h3>
+          <div class="p-pie"><span class="precio">$1,099</span><button class="btn-mini" type="button">Agregar</button></div>
+        </article>
+
+        <article class="producto">
+          <div class="foto fondo-3"><span class="etiqueta etiqueta-oferta">-20%</span><svg class="p-zapato z3"><use href="#zapato"/></svg></div>
+          <p class="p-cat">Niño · Escolar</p>
+          <h3>Recreo Max</h3>
+          <div class="p-pie"><span class="precio"><s>$799</s> $639</span><button class="btn-mini" type="button">Agregar</button></div>
+        </article>
+
+        <article class="producto">
+          <div class="foto fondo-4"><svg class="p-zapato z4"><use href="#zapato"/></svg></div>
+          <p class="p-cat">Niña · Deportivo</p>
+          <h3>Chispa</h3>
+          <div class="p-pie"><span class="precio">$749</span><button class="btn-mini" type="button">Agregar</button></div>
+        </article>
+
+        <article class="producto">
+          <div class="foto fondo-2"><svg class="p-zapato z5"><use href="#zapato"/></svg></div>
+          <p class="p-cat">Masculino · Bota</p>
+          <h3>Sendero Pro</h3>
+          <div class="p-pie"><span class="precio">$1,849</span><button class="btn-mini" type="button">Agregar</button></div>
+        </article>
+
+        <article class="producto">
+          <div class="foto fondo-1"><span class="etiqueta">Nuevo</span><svg class="p-zapato z6"><use href="#zapato"/></svg></div>
+          <p class="p-cat">Femenino · Sandalia</p>
+          <h3>Costa Sol</h3>
+          <div class="p-pie"><span class="precio">$589</span><button class="btn-mini" type="button">Agregar</button></div>
+        </article>
+
+        <article class="producto">
+          <div class="foto fondo-4"><svg class="p-zapato z7"><use href="#zapato"/></svg></div>
+          <p class="p-cat">Niño · Tenis</p>
+          <h3>Mini Turbo</h3>
+          <div class="p-pie"><span class="precio">$689</span><button class="btn-mini" type="button">Agregar</button></div>
+        </article>
+
+        <article class="producto">
+          <div class="foto fondo-3"><svg class="p-zapato z8"><use href="#zapato"/></svg></div>
+          <p class="p-cat">Femenino · Formal</p>
+          <h3>Elegancia 90</h3>
+          <div class="p-pie"><span class="precio">$1,399</span><button class="btn-mini" type="button">Agregar</button></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="beneficios">
+      <div><strong>Envío gratis</strong><p>En compras desde $999 a todo el país.</p></div>
+      <div><strong>Cambio fácil</strong><p>¿No te quedó? Cámbialo en 30 días.</p></div>
+      <div><strong>Guía de tallas</strong><p>Mide tu pie y elige la talla correcta.</p></div>
+      <div><strong>Pago seguro</strong><p>Tarjeta, transferencia o en efectivo.</p></div>
+    </section>
+
+    <!-- SUSCRIPCIÓN -->
+    <section class="suscripcion" id="buscar">
+      <div>
+        <h2>10% de descuento en tu primera compra</h2>
+        <p>Suscríbete y recibe ofertas antes que nadie.</p>
+      </div>
+      <form class="form-suscripcion" action="#" onsubmit="return false">
+        <label for="correo" class="solo-lectores">Correo electrónico</label>
+        <input id="correo" type="email" placeholder="tucorreo@ejemplo.com" required>
+        <button class="btn btn-principal" type="submit">Suscribirme</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie-grid">
+      <div>
+        <a class="logo logo-pie" href="#inicio">Zapaton</a>
+        <p>Calzado para toda la familia, desde el primer paso hasta el último kilómetro.</p>
+      </div>
+      <div>
+        <h4>Comprar</h4>
+        <a href="#ninos">Niño</a><a href="#ninas">Niña</a><a href="#hombre">Masculino</a><a href="#mujer">Femenino</a>
+      </div>
+      <div>
+        <h4>Ayuda</h4>
+        <a href="#">Guía de tallas</a><a href="#">Envíos</a><a href="#">Cambios y devoluciones</a><a href="#">Contacto</a>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a>
+      </div>
+    </div>
+    <p class="copy">© 2026 Zapaton. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
